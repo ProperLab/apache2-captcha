@@ -1,0 +1,13 @@
+#BEGIN apache2-captcha
+RewriteEngine On
+# Blocked files/folders.
+# Example with multiple files: RewriteCond %{REQUEST_URI} ^/PrivateFolder|/PrivateFile.zip
+# Example that only allows access to a folder: RewriteCond %{REQUEST_URI} !^/publicFolder
+RewriteCond %{REQUEST_URI} ^/
+# Name of the cookie needed to access (change it to whatever you want)
+RewriteCond %{HTTP_COOKIE} !noauth
+# Allowed files when showing the captcha page
+RewriteCond %{REQUEST_FILENAME} !/r|/favicon.ico
+# If above conditions are met this redirects the request url to the captcha protection
+RewriteRule ^(.*)$ /r?target=%{REQUEST_URI} [R,L]
+#END apache2-captcha
