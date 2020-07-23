@@ -1,0 +1,15 @@
+.DS_Store
+
+# local env files
+dbconf.php
+.env.local
+.env.*.local
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
