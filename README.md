@@ -19,10 +19,10 @@ To see the repository documentation head to the wiki page
 ## Download
 You can download this repository from the link below. Please note that you need an apache2 installation with PHP
 - [Download Link](https://github.com/ProperLab/apache2-captcha/releases)
-- [Installation Guide](https://github.com/ProperLab/ProperLabMedia/wiki/Installation-Guide)
+- [Installation Guide](https://github.com/ProperLab/apache2-captcha/wiki/Installation-Guide)
 
 ## Security Concerns
-See [Security Concerns](https://github.com/ProperLab/ProperLabMedia/wiki/Security-Concerns) for more info about this bot prevention system.
+See [Security Concerns](https://github.com/ProperLab/apache2-captcha/wiki/Security-Concerns) for more info about this bot prevention system.
 
 ## Credits
 apache2-captcha is a product of [MakerLab](https://makerlab.sytes.net) and [ProperCloud](https://propercloud.sytes.net)
