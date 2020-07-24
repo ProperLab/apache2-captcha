@@ -1,3 +1,5 @@
+<img src="screenshot.png">
+
 ## Introduction
 
 apache2-captcha is a simple captcha verification to prevent bots from accessing your site or specific folders as apache2 doesn't have any effectively way to protect itself from bots
