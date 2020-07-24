@@ -44,7 +44,11 @@ if ($isValidAuth) {
 	session_destroy();
 	unset($_COOKIE['PHPSESSID']);
 	setcookie('PHPSESSID', '', time() - 3600, '/');
-	echo "true";
+	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+		echo "true";
+	} else {
+		header("Location: $baseUrl$target");
+	}
 	die;
 }
 
