@@ -1,8 +1,27 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid red;*/
+}
+
+body {
+    background-color: #556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal {
     display: block;
     width: 600px;
     max-width: 100%;
-    height: 400px;
+    height: 500px;
     max-height: 100%;
     position: fixed;
     z-index: 100;
@@ -31,32 +50,68 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    padding: 20px 50px 20px 20px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #556;
-    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-    font-family: 'Arial', sans-serif;
-}
-
-p {
-    margin: 0 0 10px 0;
-}
-
-h1 {
-    margin: 0 0 20px 0;
+    padding: 20px 20px 0px 20px;
 }
 
 a {
     cursor: pointer;
     color: grey;
+}
+
+.box-captcha {
+    box-shadow: 0 0 1.3rem rgba(30, 144, 255, 0.15);
+    padding: 1.5rem;
+}
+
+.box-captcha div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.captcha {
+    margin-bottom: .6rem;
+    box-shadow: inherit;
+}
+
+.header {
+    display: block !important;
+    text-align: center;
+}
+
+.button {
+    outline: none;
+    padding: .7rem 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: 900;
+    transition: .2s;
+}
+
+.button:active {
+    transform: scale(.9)
+}
+
+.text-captcha {
+    outline: none;
+    border: 2px solid dodgerblue;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.2rem;
+    padding: .5rem .9rem;
+    border-radius: .3rem;
+}
+
+.text-target {
+    outline: none;
+    border: 2px solid gray;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: .2rem .9rem;
+    border-radius: .3rem;
+    text-align: center;
 }

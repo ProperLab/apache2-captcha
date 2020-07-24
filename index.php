@@ -74,28 +74,31 @@ function setAuth($name, $content, $expire)
 
 <body>
 
-	<div class="">
+	<div>
 		<div class="modal-overlay" id="modal-overlay"></div>
 
 		<div class="modal" id="modal">
-			<div class="modal-guts">
-				<div id="main" class="container">
-					<h1>Captcha verification required</h1>
-					<p>After submiting the captcha you will be redirected to: <input id="target" disabled value="<?php echo $baseUrl . $target; ?>"></p>
-					<div class="">
-						<div class="">
-							<input type="text" class="" name="token" id="token" placeholder="Captcha">
+			<div id="main" class="modal-guts">
+				<div class="box-captcha">
+					<div class="header">
+						<h1>Captcha verification required</h1>
+						<div>
+							<p>After submiting the captcha you will be redirected to: <input id="target" class="text-target" disabled value="<?php echo $baseUrl . $target; ?>"></p>
 						</div>
-
-						<div class="">
-							<img src="captcha/image.php" alt="CAPTCHA" id="image-captcha">
-							<button id="refresh-captcha" class="" title="refresh">🔁</button>
-						</div>
-
 					</div>
-					<div id="message"></div>
-
-					<button class="" name="submit" onclick="verify()">Submit</button>
+					<div class="captcha">
+						<img src="captcha/image.php" alt="CAPTCHA" id="image-captcha">
+					</div>
+					<div class="box-generar">
+						<button id="refresh-captcha" class="button" title="refresh">Refresh</button>
+					</div>
+					<div class="box-entrada">
+						<input class="text-captcha" type="text" name="token" id="token" placeholder="Captcha">
+					</div>
+					<div id="message" style="padding: 3px;"></div>
+					<div class="box-button">
+						<button class="button" name="submit" onclick="verify()">Submit</button>
+					</div>
 				</div>
 
 			</div>
