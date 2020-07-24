@@ -16,7 +16,7 @@ apache2-captcha is made using PHP and some apache2 config.
 
 ## Documentation
 To see the repository documentation head to the wiki page
-- [Wiki](https://github.com/ProperLab/ProperLabMedia/wiki)
+- [Wiki](https://github.com/ProperLab/apache2-captcha/wiki)
 
 ## Download
 You can download this repository from the link below. Please note that you need an apache2 installation with PHP
