@@ -9,5 +9,5 @@ RewriteCond %{HTTP_COOKIE} !noauth
 # Allowed files when showing the captcha page
 RewriteCond %{REQUEST_FILENAME} !/r|/favicon.ico
 # If above conditions are met this redirects the request url to the captcha protection
-RewriteRule ^(.*)$ /r?target=%{REQUEST_URI}?%{QUERY_STRING} [R,L]
+RewriteRule .* /r?target=%{REQUEST_URI}?%{QUERY_STRING} [R,L]
 #END apache2-captcha
